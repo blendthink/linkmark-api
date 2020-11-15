@@ -17,7 +17,7 @@ tags:
 paths:
   /tags:
     get:
-      summary: 't全てのタグを取得する'
+      summary: '全てのタグを取得する'
       tags:
         - tag
       responses:
