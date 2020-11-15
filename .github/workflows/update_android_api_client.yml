@@ -19,7 +19,7 @@ jobs:
           repository: blendthink/linkmark-android
           ref: master
           path: android
-          token: ${{ secrets.secrets.API_KEY_FOR_GITHUB_ACTIONS }}
+          token: ${{ secrets.API_KEY_FOR_GITHUB_ACTIONS }}
       - name: Set up JDK
         uses: actions/setup-java@v1
         with:
