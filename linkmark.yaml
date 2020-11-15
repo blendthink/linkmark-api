@@ -28,7 +28,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Tags'
       operationId: get-tags
-      description: '全てのタグを取得する'
+      description: 'Key, Token の組み合わせで取得可能な全てのタグを取得する'
       parameters:
         - schema:
             type: string
@@ -92,7 +92,7 @@ paths:
           in: query
           name: token
           required: true
-      description: '全てのリンクを取得する'
+      description: 'Key, Token の組み合わせで取得可能な全てのリンクを取得する'
     post:
       summary: 'リンクを作成する'
       tags:
