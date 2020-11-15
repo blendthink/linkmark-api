@@ -28,12 +28,7 @@ jobs:
         run: |
           cp ./api/linkmark.yaml ./android/linkmark.yaml
           cd ./android
-          rm -rf ./apiclient/build/openApiGenerator/linkmark
-          rm -rf ./apiclient/src/main/kotlin/dev/honwakalab/linkmark/apiclient/infrastructure
-          rm -rf ./apiclient/src/main/kotlin/dev/honwakalab/linkmark/apiclient/linkmark
           sh ./update_api_client.sh
-          cp -r ./apiclient/build/openApiGenerator/linkmark/src/main/kotlin/dev/honwakalab/linkmark/apiclient/infrastructure ./apiclient/src/main/kotlin/dev/honwakalab/linkmark/apiclient/infrastructure
-          cp -r ./apiclient/build/openApiGenerator/linkmark/src/main/kotlin/dev/honwakalab/linkmark/apiclient/linkmark ./apiclient/src/main/kotlin/dev/honwakalab/linkmark/apiclient/linkmark
           cd ./..
       - name: Create Pull Request
         id: cpr
