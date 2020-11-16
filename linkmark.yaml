@@ -42,7 +42,7 @@ paths:
           name: token
           required: true
     post:
-      summary: 'teタグを作成する'
+      summary: 'tタグを作成する'
       tags:
         - tag
       operationId: post-tags
