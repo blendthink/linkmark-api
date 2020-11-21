@@ -29,6 +29,7 @@ jobs:
           cp ./api/linkmark.yaml ./android/linkmark.yaml
           cd ./android
           sh ./update_api_client.sh
+          ./gradlew ktlintFormat
           cd ./..
       - name: Create Pull Request
         id: cpr
